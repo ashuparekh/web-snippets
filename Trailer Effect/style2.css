@@ -1,0 +1,68 @@
+
+/* GENERAL ========================================= */
+
+html {
+height: 100%;
+}
+
+body {
+min-height: 100%;
+-webkit-perspective: 400px;
+-moz-perspective: 400px;
+-ms-perspective: 400px;
+perspective: 400px;
+}
+
+body.dark {
+background-image: url(https://d29498xbqfhwsb.cloudfront.net/static/images/bg_travel.jpg);
+}
+
+
+
+/* CONTENT ========================================= */
+
+canvas {
+position: absolute;
+left: 0;
+top: 0;
+z-index: -1;
+}
+/* MOBILE/TABLET OPTIMISATIONS ========================================= */
+
+@media screen and (max-width: 960px)
+{
+html {
+-webkit-text-size-adjust: none;
+}
+
+header > .inner {
+min-width: 100%;
+}
+
+#logo {
+top: 0px;
+margin-left: 4%;
+-webkit-transform-origin: 0 0;
+-moz-transform-origin: 0 0;
+-ms-transform-origin: 0 0;
+transform-origin: 0 0;
+-webkit-transform: scale(0.8,0.8);
+-moz-transform: scale(0.8,0.8);
+-ms-transform: scale(0.8,0.8);
+transform: scale(0.8,0.8);
+}
+
+header > .inner > menu {
+position: absolute;
+right: 4%;
+margin-right: 0;
+}
+
+header > .inner > menu > li {
+margin-left: 8px;
+}
+
+header > .inner > menu > li > a {
+margin-left: 1em;
+}
+}
